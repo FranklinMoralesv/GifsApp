@@ -1,0 +1,24 @@
+<div class="sidebar  vh-100 bg-dark border-right p-3" >
+    <a href="/" class="text-decoration-none">
+        <h1 class="text-light text-center fs-1">Gifs-App</h1>
+    </a>
+    <hr class="text-white" />
+   
+    <footer class="footer d-flex flex-column justify-content-between">
+
+        <div class="list-group list-reset text-center ">
+             <button *ngFor="let item of searchHistory"
+                class="list-group-item list-group-item-action fw-bolder fs-4" (click)="search(item)">
+                 {{ item | titlecase }}
+             </button>
+         </div> 
+     
+         <div >
+             <a href="https://github.com/FranklinMoralesv" target=" _blanck" class="text-decoration-none">
+                 <p class="text-light text-center m-0 p-0">All Rights Reserved</p>
+                 <p class="text-light text-center m-0 p-0">Developed By  <strong>Franklin Morales</strong></p>
+             </a>
+         </div>
+    </footer>
+
+</div>

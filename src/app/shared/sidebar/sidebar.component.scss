@@ -1,0 +1,26 @@
+.sidebar {
+    min-width: 40vw;
+}
+
+.footer{
+    height: 90vh;
+
+    p{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
+@media (min-width: 768px){ 
+    .sidebar{
+        min-width: 30vw; 
+    }
+    .footer{
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
+
